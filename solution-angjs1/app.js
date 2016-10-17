@@ -1,4 +1,3 @@
-
 (function()
 	{
 		'use strict';
@@ -14,14 +13,20 @@
 
 				$scope.getMenu = function()
 				{
-					var str = $scope.menu;			
-					if($scope.menu != "")
+					var str = $scope.menu;
+					console.log("Lunch Menu: "+str);
+					if($scope.menu != undefined || null || "")
 					{
 
 						var splits = str.split(',');
 
 						splits = clean(splits);
-						msg = (splits.length <= 3)? "Enjoy!" : "Too much!";
+					
+						console.log("Lunch Menu array: ",splits);
+						console.log("array size:"+splits.length);
+						msg = splits.length == 0 ? "Please enter the data first" :  splits.length <= 3 ?  "enjoy!" : "Too much!";
+
+						//msg = (splits.length <= 3 && != 0) ? enjoy!" : "Too much!";
 
 					}
 					else
