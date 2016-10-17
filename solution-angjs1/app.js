@@ -15,7 +15,7 @@
 				$scope.getMenu = function()
 				{
 					var str = $scope.menu;			
-					if(!$scope.menu)
+					if($scope.menu != "")
 					{
 
 						var splits = str.split(',');
