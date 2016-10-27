@@ -6,6 +6,9 @@ body {
 p{
   padding: 10px 10px 10px 10px;
 }
+h2{
+text-align: center;
+}
 #header-nav{
     background-color:#C1BEBE;
     color:#000000;
@@ -28,6 +31,7 @@ p{
 
 @media (max-width: 991px){
    .content { 
+   margin: 0 auto;
     width: 75%;
       }
 
