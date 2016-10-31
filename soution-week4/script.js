@@ -4,10 +4,11 @@
 		 var letter=string[i].charAt(0).toLowerCase();
 		 	var x=string[i];
 				if(letter=='j'){
-					helloSpeaker.speak(x);
+					byeSpeaker.speak(x);
+
 				}
 				else{
-					byeSpeaker.speak(x);
+					helloSpeaker.speak(x);
 
 				}
 	
